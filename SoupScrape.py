@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Wed Oct 25 17:34:38 2017
 
-@author: v587478
-"""
 
 import urllib2
 from bs4 import BeautifulSoup
@@ -11,7 +7,6 @@ import pandas as pd
 from dateutil.parser import parse
 import re
 
-myproxy = urllib2.ProxyHandler({"http":"proxy.jpmchase.net:8080", 'https': 'proxy.jpmchase.net:8443' }) 
 o = urllib2.build_opener(myproxy)
 urllib2.install_opener(o)
 
